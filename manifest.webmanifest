@@ -1,1 +1,2 @@
-{"name":"Repwise — Bodybuilding Log","short_name":"Repwise","description":"A free, private workout log built for progressive overload.","start_url":"./","scope":"./","display":"standalone","orientation":"portrait","background_color":"#f3f3ef","theme_color":"#182018","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
+{"name":"Repwise — Bodybuilding Log","short_name":"Repwise","description":"A free, private workout log built for progressive overload.","start_url":"./","scope":"./","display":"standalone","orientation":"portrait","background_color":"#080c11","theme_color":"#080c11","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
+

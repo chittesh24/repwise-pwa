@@ -51,3 +51,7 @@ GitHub Pages can serve this static site without a paid backend or app-store publ
 5. If it still fails, note the exact Safari error message and whether the URL works on another network. That distinguishes a Pages deployment problem from a device/network restriction.
 
 The service worker cache has been versioned to `repwise-v2`; after publishing these changes, a normal reload should download the new shell and clear the earlier Repwise cache.
+
+## App navigation update
+
+This PWA keeps one HTML shell, like many installed web apps, but now presents separate app screens. The bottom bar has Home, Progress, Start workout, Library, and Body; use More for Cardio, Muscle tracker, Plan, Photos, Settings, and Import. Screen selection updates the URL hash so Safari back and forward navigation work. The new `app-ui.js` is included in the service-worker cache (`repwise-v3`). After changing files, publish `index.html`, `styles.css`, `app-ui.js`, `sw.js`, and `manifest.webmanifest` together.
