@@ -41,3 +41,13 @@ Before importing your full history, export a small sample from FitNotes, open **
 ## Free-tier scope
 
 GitHub Pages can serve this static site without a paid backend or app-store publication. The free-host terms, bandwidth limits, and availability are controlled by GitHub and may change. The app has no paid services built in, but backups remain your responsibility. It is a home-screen web app, not an App Store native iOS binary.
+
+## iPhone Safari troubleshooting
+
+1. First open the published address in Safari: `https://chittesh24.github.io/repwise-pwa/`. The trailing slash matters for this GitHub Pages project path.
+2. If Safari says it cannot find the server, check **GitHub → repwise-pwa → Settings → Pages** and confirm Pages is enabled for the `main` branch and root folder. Wait for the Pages deployment status to complete before retrying.
+3. If a blank or old version opens, Safari may still hold the previous service-worker cache. On iPhone open **Settings → Safari → Advanced → Website Data**, search for `github.io`, remove the site data, then reopen the address. This removes local browser data for GitHub Pages sites, so export a JSON backup first if this device already contains workouts.
+4. Confirm the page loads in Safari before using **Share → Add to Home Screen**. Opening the Pages URL does not require installing the PWA.
+5. If it still fails, note the exact Safari error message and whether the URL works on another network. That distinguishes a Pages deployment problem from a device/network restriction.
+
+The service worker cache has been versioned to `repwise-v2`; after publishing these changes, a normal reload should download the new shell and clear the earlier Repwise cache.
